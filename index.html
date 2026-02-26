@@ -539,7 +539,7 @@
             .then(function(r) { return r.json(); })
             .then(function(result) {
               if (result.success) {
-                window.location.href = '/webinar-thankyou.html?name=' + encodeURIComponent(firstName);
+                window.location.href = 'webinar-thankyou.html?name=' + encodeURIComponent(firstName);
               } else {
                 showFormToast('Verification failed. Contact support@quantumalgo.in', false);
                 btn.innerHTML = originalText;
