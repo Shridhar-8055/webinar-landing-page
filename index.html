@@ -11,6 +11,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="webinar.css">
+  <style>
+    .about-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 3px solid var(--primary);
+      box-shadow: 0 0 30px rgba(0,82,183,0.3);
+    }
+    @media (max-width: 768px) {
+      .about-photo { width: 100px; height: 100px; }
+    }
+    @media (max-width: 400px) {
+      .about-photo { width: 80px; height: 80px; }
+    }
+  </style>
 </head>
 <body>
 
@@ -235,7 +252,7 @@
     <div class="container">
       <h2 class="section-title">Hi, I'm Shamiq Hussain</h2>
       <div class="about-card">
-        <div class="about-avatar">SA</div>
+        <img src="photo_2026-03-02%2017.37.41.jpeg" alt="Shamiq Hussain" class="about-photo">
         <div class="about-info">
           <h3>Shamiq Hussain</h3>
           <p>I've built 100+ profitable Expert Advisors using AI.</p>
